@@ -1,0 +1,169 @@
+$keyColorRed: #E53D4E;
+$keycolorGreen: green;
+
+//min
+$breakPoint-xs: 576px;
+$breakPoint-sm: 768px;
+$breakPoint-md: 992px;
+
+.bg-white {
+  background-color: #FFF;
+}
+
+html {
+  font-size: 14px;
+
+  @media(max-width: $breakPoint-md) {
+    font-size: 12px;
+  }
+}
+
+body {
+  background: #EFEFEF;
+  color: #333;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  height: 80vh;
+  background-image: url("./image/hero.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media(max-width: $breakPoint-xs) {
+    height: 50vh;
+  }
+
+  &__title {
+    flex: 1 1 auto;
+
+
+    svg {
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+      fill: #FFF;
+    }
+  }
+
+  &__subTitle {
+    font-size: 1.6rem;
+    color: #FFF;
+    text-align: right;
+    font-family: Serif;
+  }
+}
+
+
+.lead {
+  margin: 120px 0 0;
+  text-align: center;
+  font-weight: bold;
+
+  @media(max-width: $breakPoint-xs) {
+    margin: 60px 0 0;
+  }
+}
+
+.heading {
+  margin: 120px 0 24px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+
+  @media(max-width: $breakPoint-xs) {
+    margin: 60px 0 24px;
+  }
+
+  &__accent {
+    color: $keyColorRed;
+
+    &--green {
+      color: $keycolorGreen;
+    }
+  }
+}
+
+.work {
+  display: flex;
+  margin-bottom: 80px;
+
+  @media(max-width: $breakPoint-md) {
+    display: block;
+  }
+
+  &__image {
+    flex: 0 0 60%;
+    height: 500px;
+    border-radius: 20px 0 20px 0;
+    object-fit: cover;
+    background-color: #CCC;
+
+    @media(max-width: $breakPoint-md) {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    margin-left: 32px;
+
+    @media(max-width: $breakPoint-md) {
+      margin-left: 0;
+    }
+  }
+
+  &__artistContainer {
+    display: block;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__artistLabel {
+    display: inline-block;
+    width: 60px;
+  }
+
+  &__artist {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  &__titleContainer {
+    margin-bottom: 32px;
+
+    @media(max-width: $breakPoint-md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__titleLabel {
+    display: inline-block;
+    width: 60px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
+  &__poem {
+    p {
+      line-height: 2rem;
+    }
+  }
+}
+
+.eventContainer {
+  padding-bottom: 60px;
+  background-color: #FFF;
+}
