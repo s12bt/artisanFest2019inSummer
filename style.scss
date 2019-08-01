@@ -43,7 +43,6 @@ body {
   &__title {
     flex: 1 1 auto;
 
-
     svg {
       filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
       fill: #FFF;
@@ -112,6 +111,7 @@ body {
 
   &__text {
     margin-left: 32px;
+    width: 100%;
 
     @media(max-width: $breakPoint-md) {
       margin-left: 0;
