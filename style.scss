@@ -37,6 +37,7 @@ body {
 
   @media(max-width: $breakPoint-xs) {
     height: 50vh;
+    background-image: url("./image/hero_sm.jpg");
   }
 
   &__title {

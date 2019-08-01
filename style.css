@@ -24,7 +24,8 @@ body {
   background-attachment: fixed; }
   @media (max-width: 576px) {
     .hero {
-      height: 50vh; } }
+      height: 50vh;
+      background-image: url("./image/hero_sm.jpg"); } }
   .hero__title {
     flex: 1 1 auto; }
     .hero__title svg {
