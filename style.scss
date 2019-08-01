@@ -21,6 +21,7 @@ html {
 body {
   background: #EFEFEF;
   color: #333;
+  padding-bottom: 60px;
 }
 
 .hero {
@@ -95,8 +96,8 @@ body {
   }
 
   &__image {
-    flex: 0 0 60%;
-    height: 500px;
+    width: 500px;
+    height: 400px;
     border-radius: 20px 0 20px 0;
     object-fit: cover;
     background-color: #CCC;
@@ -109,7 +110,6 @@ body {
   }
 
   &__text {
-    flex: 1 1 auto;
     margin-left: 32px;
 
     @media(max-width: $breakPoint-md) {
@@ -166,4 +166,8 @@ body {
 .eventContainer {
   padding-bottom: 60px;
   background-color: #FFF;
+}
+
+.account__twitter {
+  color: #333;
 }
