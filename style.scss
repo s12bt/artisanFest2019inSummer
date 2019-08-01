@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  height: 80vh;
+  height: 600px;
   background-image: url("./image/hero.jpg");
   background-position: center center;
   background-size: cover;
@@ -43,7 +43,7 @@ body {
 
 
     svg {
-      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
       fill: #FFF;
     }
   }
